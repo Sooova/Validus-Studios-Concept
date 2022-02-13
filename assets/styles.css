@@ -5,6 +5,10 @@ body {
     overscroll-behavior: none;
 }
 
+#main {
+    margin-bottom:100px;
+}
+
 canvas {
     background-color: transparent;
 }
@@ -158,8 +162,12 @@ section img {
     padding:
 }
 
+.panel {
+    transform: translateX(75vw);
+}
+
 .panel3 {
-    transform: translateX(-120vw);
+    transform: translateX(-75vw);
 }
 
 @media only screen and (max-width: 767px) {
@@ -175,4 +183,28 @@ section img {
     justify-content: center;
     margin-top: 50px;
     margin-top:40vh;
+    margin-bottom:25vh;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top:1.5px solid rgb(190, 190, 190);
+    width:70%;
+}
+
+.footer ul li {
+    padding:20px;
+    text-align: center;
+}
+
+.githubLogo {
+    width:60px;
 }
