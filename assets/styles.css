@@ -82,7 +82,7 @@ h2 {
     text-align: right;
 }
 
-span {
+.spanText {
     font-weight: 700;
 }
 
@@ -207,4 +207,33 @@ section img {
 
 .githubLogo {
     width:60px;
+}
+
+.fadeIn1 {
+    animation: fadeIn linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn2 {
+    animation: fadeIn linear;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn3 {
+    animation: fadeIn linear;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

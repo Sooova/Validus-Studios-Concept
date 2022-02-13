@@ -11,7 +11,7 @@ gsap.to(sections, {
     pin: false,
     scrub: 1,
     // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "+=1750"
+    end: "+=1750",
     // markers: true,
   }
 });
@@ -42,7 +42,7 @@ gsap.to(sections3, {
       pin: false,
       scrub: 1,
       // base vertical scrolling on how wide the container is so it feels more natural.
-      end: "+=2050"
+      end: "+=2050",
       // markers: true,
     }
   });
