@@ -40,13 +40,30 @@ canvas {
     opacity: 80%;
 }
 
-.nav ul:hover {
+.nav ul li:hover {
     opacity: 100%;
     cursor: pointer;
+    animation: navHover 0.25s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navHover {
+    from {
+        background-color:none;
+        border-radius:5px;
+    }
+    to {
+        background-color:rgb(63, 63, 63);
+        border-radius:10px;
+        color:whitesmoke;
+    }
 }
 
 .nav ul li {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .pane1 {
