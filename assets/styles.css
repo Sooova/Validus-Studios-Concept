@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+canvas {
+    background-color: transparent;
+}
+
+.nav {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 1px;
+    left: 30px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    opacity: 80%;
+}
+
+.nav ul:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.nav ul li {
+    padding: 20px;
+}
+
+.pane1 {
+    display: flex;
+    justify-content: row;
+    width: 100vw;
+    justify-content: flex-end;
+    height: 85vh;
+    margin-top: 50px;
+}
+
+.landingText {
+    margin-right: 10vw;
+    margin-top: 40%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-weight: 500;
+    margin: 0;
+    display: inline;
+    text-align: right;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 0;
+    font-size: 80px;
+    text-align: right;
+}
+
+span {
+    font-weight: 700;
+}
+
+
+.pane1 img {
+    width: 900px;
+    object-fit: cover;
+}
+
+.paragraphText {
+    text-align: left;
+    line-height: 150%;
+    margin-top: 40px;
+    width: 545px;
+    font-size: 18px;
+}
+
+.paragraphText a {
+    font-weight: 500;
+}
+
+.trigger {
+    width: 100%;
+    visibility: hidden;
+}
+
+.horizontalParent {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-top: 80px;
+}
+
+.subheading2 {
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+}
+
+.dare {
+    font-weight: 400;
+    margin-top: 50px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.dare span {
+    font-weight: 700;
+}
+
+.spacer {
+    width: 100vw;
+    max-height: 750px;
+    visibility: hidden;
+}
+
+section img {
+    object-fit: cover;
+    width: 500px;
+    padding-left: 30px;
+}
+
+.panel2 ul {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.textGallery {
+    padding:
+}
+
+.panel3 {
+    transform: translateX(-120vw);
+}
+
+@media only screen and (max-width: 767px) {
+    .panel3 {
+        transform: translateX(-200vw);
+    }
+}
+
+.pane2 {
+    display: flex;
+    justify-content: row;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 50px;
+    margin-top:40vh;
+}
