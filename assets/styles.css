@@ -5,9 +5,9 @@ body {
     overscroll-behavior: none;
 }
 
-#main {
+/* #main {
     margin-bottom:100px;
-}
+} */
 
 canvas {
     background-color: transparent;
@@ -220,6 +220,13 @@ section img {
 .footer ul li {
     padding:20px;
     text-align: center;
+}
+
+footer img {
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
 }
 
 .githubLogo {
