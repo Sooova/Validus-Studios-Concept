@@ -75,13 +75,30 @@ canvas {
     margin-top: 50px;
 }
 
+.landingImageMobile {
+    width:100%;
+    height:20vh;
+    object-fit: cover;
+    transform: translateY(20px);
+}
+
+.landingImageMobile2 {
+    width:100%;
+    height:20vh;
+    object-fit: cover;
+    transform: translateY(-40px);
+}
+
+.mobile {
+    display:none;
+}
+
 .landingText {
     margin-right: 10vw;
     margin-top: 40%;
     display: flex;
     justify-content: right;
     flex-direction: column;
-
 }
 
 h1 {
@@ -115,6 +132,11 @@ h2 {
     margin-top: 40px;
     width: 545px;
     font-size: 18px;
+}
+
+.paragraphTextMobile {
+    font-size:13px;
+    position:relative;
 }
 
 .paragraphText a {
@@ -260,4 +282,68 @@ footer img {
     to {
         opacity: 100%;
     }
+}
+
+@media screen and (max-width:767px) {
+    .desktop {
+        display:none;
+    }
+    .mobile {
+        display:block;
+    }
+    h1 {
+        font-size:25px;
+    }
+    h2 {
+        font-size:30px;
+    }
+    .nav ul {
+        font-size:13px;
+        margin:0;
+        padding:0;
+    }
+    .logo {
+        display:flex;
+        justify-content: center;
+        width:100%;
+        position:relative;
+        top:0;
+        left:0;
+    }
+    .logo img {
+        position:relative;
+        width:100px;
+    }
+
+    .landingText {
+        margin-top:0px;
+        padding:10px 30px 10px;
+        border-radius: 20px;
+        background-color: white;
+        z-index: 10;
+        position: relative;
+        margin-right:0px;
+    }
+    .horizontalParent {
+        margin-top:0px;
+    }
+    section img {
+        width:250px;
+    }
+    .panel2 ul {
+        font-size:25px;
+        flex-wrap:wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .panel2 ul li {
+        text-align: left;
+        width:100%;
+    }
+
+    .pane2 h1 {
+        font-size:50px;
+    }
+
 }
