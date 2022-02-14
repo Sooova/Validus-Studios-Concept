@@ -155,11 +155,12 @@ h2 {
 
 .horizontalParent {
     overscroll-behavior: none;
+    overflow-x: hidden;
     width: 600%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
+    /* position: relative; */
     margin-top: 80px;
 }
 
@@ -350,6 +351,15 @@ footer img {
 }
 
 @media screen and (max-width:767px) {
+    /* body {
+        overflow-x: hidden;
+    } */
+    /* .horizontalParent {
+        width:100%;
+    } */
+     #main {
+         overflow-x: hidden;
+     }
     .desktop {
         display:none;
     }
@@ -411,4 +421,7 @@ footer img {
         font-size:50px;
     }
 
+}
+img {
+    display:inline-block;
 }
