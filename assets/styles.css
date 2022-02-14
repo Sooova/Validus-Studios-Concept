@@ -125,6 +125,10 @@ h2 {
     width: 900px;
     object-fit: cover;
 }
+.pane1 video {
+    width:900px;
+    object-fit:cover;
+}
 
 .paragraphText {
     text-align: left;
