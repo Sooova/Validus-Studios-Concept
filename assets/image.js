@@ -84,3 +84,29 @@ const reverseCardInteraction = function () {
 }
 blogCard.addEventListener('mouseenter', cardInteraction)
 blogCard.addEventListener('mouseleave', reverseCardInteraction);
+
+dateMap = {
+    "Jan":"january",
+    "Feb":"february",
+    "Mar":"march",
+    "Apr":"april",
+    "May":"may",
+    "Jun":"june",
+    "Jul":"july",
+    "Aug":"august",
+    "Sep":"september",
+    "Nov":"november",
+    "Dec":"december",
+}
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed);
+const monthRaw = today.toDateString().substring(4,7);
+const month = dateMap[monthRaw]
+const date = today.toDateString().substring(8,10);
+
+const dateDom = document.querySelector('.numberDay');
+const monthDom = document.querySelector('.month');
+dateDom.innerHTML = date;
+monthDom.innerHTML = month;
+
+// "Sun Jun 14 2020"

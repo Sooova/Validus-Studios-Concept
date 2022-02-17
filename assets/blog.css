@@ -164,8 +164,8 @@ body {
 }
 
 .featured {
-    /* width: 25%;
-    position: relative; */
+    width: 25%;
+    position: relative;
     height: fit-content;
     outline: 4px solid black;
     outline-offset: 15px;
@@ -174,9 +174,9 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     /* fixed testing */
-    position:fixed;
+    /* position:fixed;
     width:20%;
-    right:1.5%;
+    right:1.5%; */
 }
 
 .featured h1 {
