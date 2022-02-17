@@ -382,6 +382,20 @@ body {
 }
 
 @media screen and (max-width:800px) {
+    .sideTitleDiv {
+        position:relative;
+    }
+    .blogParent {
+        width:100%;
+    }
+    .content {
+        margin-right:0;
+        margin-left:0;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px) {
     .blogCard {
         width: 100%;
         height: auto;
@@ -405,10 +419,41 @@ body {
     }
     .blogCard {
         flex-direction:column;
+        margin:0px 10px 30px;
+        padding:0px 5px 5px;
+        height:300px;
+    }
+    .blogCardText {
+        height:30%;
+    }
+    .blogCardText h1 {
+        font-size:30px;
+        height:fit-content;
+        margin-top:5px;
+    }
+    .blogCardText div p {
+        padding: 5px 15px 10px;
+        background-color:white;
+        color:black;
+        font-weight: 500;
+        position:absolute;
+        z-index:10;
+        width:80%;
+        text-align:left;
+        /* border-bottom:4px solid black; */
+        border-right: 4px solid #c10206;
+    }
+    .paragraphDiv {
+        height:70%;
     }
     .sideTitleDiv div {
         margin-bottom:5px;
     }
+    .cardImageDiv {
+        height:100%;
+        margin-top:10%;
+    }
+    .cardImage
 }
 
 
