@@ -1,3 +1,25 @@
+// const blogCard = document.querySelector('.blogCard');
+// const cardInteraction = function() {
+//   // this.querySelector('img').classList.remove('decolorize');
+//   this.querySelector('.colorsplash').classList.remove('fadeIn');
+//   this.querySelector('.color').classList.remove('fadeOut');
+//   this.querySelector('.colorsplash').classList.add('fadeOut');
+//   this.querySelector('.color').classList.add('fadeIn');
+//   this.setAttribute('style','transform:scale(1.05)');
+// }
+// const reverseCardInteraction = function() {
+//   // this.querySelector('img').classList.remove('colorize');
+//   // this.querySelector('img').classList.add('decolorize');
+//   this.querySelector('.colorsplash').classList.remove('fadeOut');
+//   this.querySelector('.color').classList.remove('fadeIn');
+//   this.querySelector('.color').classList.add('fadeOut');
+//   this.querySelector('.colorsplash').classList.add('fadeIn');
+//   this.setAttribute('style','transform:scale(1)');
+// } 
+// blogCard.addEventListener('mouseenter',cardInteraction)
+// blogCard.addEventListener('mouseleave',reverseCardInteraction);
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".imgGalery");
@@ -46,3 +68,5 @@ gsap.to(sections3, {
       // markers: true,
     }
   });
+
+//Image Animation JS

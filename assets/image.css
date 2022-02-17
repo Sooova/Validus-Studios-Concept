@@ -1,0 +1,232 @@
+.cityPath {
+    stroke-dasharray: 100;
+    animation: dash 5s linear infinite;
+}
+
+.tramPath {
+    stroke-dasharray: 100;
+    animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 600;
+    }
+}
+
+.parent {
+    position: relative;
+    width: 25%;
+}
+
+.bubble {
+    transform:scale(1.15);
+}
+
+.loveHeart {
+    transform:scale(1.15);
+}
+
+div img {
+    width: 100%;
+    filter: grayscale(100%);
+
+}
+
+.background {
+    z-index: 2;
+    position:relative;
+}
+
+div svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0%;
+}
+
+div .loveHeart {
+    top: -0.15%;
+    left: -5%;
+}
+
+div .punctuation {
+    top: -2%;
+    left: 7%;
+    transform: scale(0.8);
+}
+
+div .bubble {
+    top: -0.5%;
+    left: -0.5%;
+}
+
+div .outline {
+    top: -1%;
+    left: -1%;
+}
+
+div .city {
+    top: -1%;
+    left: -1%;
+}
+
+div .tram {
+    top:10%;
+    left:30%;
+    transition: all 5s ease;
+}
+
+.animateTram {
+    animation: animateTram 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateTram {
+    from {
+        top:0;
+        left:35%;
+    }
+    to {
+        top:25%;
+    }
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: 0.5s ease;
+}
+
+
+.grayscale {
+    animation: grayscale 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.grayscaleRestore {
+    animation: grayscaleRestore 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grayscaleRestore {
+    from {
+        filter: grayscale (100%);
+    }
+
+    to {
+        filter: grayscale(0%);
+    }
+}
+
+@keyframes grayscale {
+    from {
+        filter: grayscale (0%);
+    }
+
+    to {
+        filter: grayscale(100%);
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.yellow {
+    background-color: #F9DB24;
+    position:absolute;
+    width:50%;
+    height:80%;
+    left:25%;
+    bottom:100%;
+    opacity:0%;
+    z-index: 3;
+  }
+
+  
+.animateIn {
+    animation: animateIn 0.25s linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .animateOut {
+    animation: animateOut 0.25s linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animateIn {
+    from {
+      opacity: 0%;
+        bottom:100%;
+    }
+    to {
+      opacity: 100%;
+      bottom: 50%
+    }
+  } 
+  
+  @keyframes animateOut {
+    from {
+      opacity: 100%;
+      bottom: 50%;
+    }
+    to {
+      opacity:0%;
+      bottom:100%;
+    }
+  }
+
+.parent {
+    overflow: hidden;
+}
+
+.tram {
+    transform: scale(0.6);
+}
+/* .zoom {
+    animation: zoom 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    from {
+        transform:scale(1);
+        top: 0;
+    }
+    to {
+        transform: scale(1.05);
+        top: -50px;
+    }
+} */

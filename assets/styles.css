@@ -18,6 +18,11 @@ canvas {
     width: 100%;
 }
 
+.nav a {
+    text-decoration:none;
+    color:black;
+}
+
 .logo {
     position: absolute;
     top: 1px;
