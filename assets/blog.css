@@ -105,26 +105,6 @@ body {
     position: relative;
 }
 
-@keyframes colorize {
-    from {
-        filter: grayscale(100%);
-    }
-
-    to {
-        filter: grayscale(0%);
-    }
-}
-
-@keyframes decolorize {
-    from {
-        filter: grayscale(0%);
-    }
-
-    to {
-        filter: grayscale(100%);
-    }
-}
-
 .fadeOut {
     animation: fadeOut 0.5s linear;
     animation-fill-mode: forwards;
@@ -218,7 +198,7 @@ body {
 
 .featured video {
     width: 100%;
-    filter: grayscale(100%)
+    /* filter: grayscale(100%) */
 }
 
 .date {
@@ -226,6 +206,7 @@ body {
     flex-direction: column;
     justify-content: right;
     margin-bottom: 40px;
+    color: #c10206;
 }
 
 .date p {
@@ -233,6 +214,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     margin: 0;
+    color: #c10206;
 }
 
 .paragraphDiv {
@@ -241,7 +223,7 @@ body {
 
 .readMore {
     bottom: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #c10206;;
     color: white;
     position: absolute;
     padding: 5px 10px 5px;
@@ -381,9 +363,58 @@ body {
     }
 }
 
+@media screen and (max-width:1095px) {
+    .blogCard {
+        width: 780px;
+        height: 390px;
+    }
+
+    .content {
+        justify-content: center;
+        margin-left: 10%;
+        width: 95%
+    }
+
+    .featured {
+        width: 25%;
+        display:none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .blogCard {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%
+    }
+
+    .featured {
+        width: 25%;
+        display:none;
+    }
+    .sideTitleDiv {
+        position:relative;
+    }
+    .blogParent {
+        width:100%
+    }
+    .blogCard {
+        flex-direction:column;
+    }
+    .sideTitleDiv div {
+        margin-bottom:5px;
+    }
+}
+
+
 .banner {
     width: 100%;
-    background-color: black;
+    background-color: #c10206;;
     height: 30px;
     position: relative;
     margin-top:50px;
