@@ -44,11 +44,13 @@ body {
     font-size: 50px;
     width: 100%;
     text-align: center;
+    font-family:'josefin sans',sans-serif;
 }
 
 .blogCardText p {
     line-height: 150%;
-    opacity: 70%;
+    opacity: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 .blogCardText div p {
@@ -198,7 +200,7 @@ body {
 }
 
 .featured h1 {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'josefin sans', sans-serif;
     font-size: 33px;
     background-color: white;
     position: absolute;
@@ -210,7 +212,7 @@ body {
 }
 
 .featured h1 span {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px
 }
 
@@ -392,7 +394,7 @@ body {
     color: white;
     position: absolute;
     top: -40%;
-    animation: animate 25s linear infinite;
+    animation: animate 40s linear infinite;
     font-weight:600;
     width:10000px;
     height:20px;
