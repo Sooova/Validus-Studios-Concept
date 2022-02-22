@@ -1,3 +1,140 @@
-div {
-    max-width:75%;
+.gridContainer {
+    width:1250px;
+    position:relative;
+
+}
+
+.gridParent {
+    position:relative;
+    width:40%;
+    height:100%;
+}
+
+button {
+    position:absolute;
+    top:50%;
+    right:50%;
+}
+
+.invis {
+    visibility: hidden;
+}
+
+.moving {
+    position:relative;
+    z-index:-1;
+}
+
+.gridImage {
+    filter:grayscale(100%);
+    margin-left:5px;
+    transition: filter 0.5s ease;
+    width:250px;
+    height:250px;
+}
+
+.colorize {
+    animation: colorize 0.20s linear;
+    animation-fill-mode: forwards;
+}
+
+.decolorize {
+    animation: decolorize 1s linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes decolorize {
+    from {
+        filter:grayscale(0%)
+    }
+    to {
+        filter:grayscale(100%);
+        /* color:black;
+        opacity:100%; */
+    }
+}
+
+@keyframes colorize {
+    from {
+        filter:grayscale(100%)
+    }
+    to {
+        filter:grayscale(0%);
+    }
+}
+
+.blur {
+    animation: blur 1s linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes blur {
+    from {
+        filter:blur(0)
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.color {
+    filter:grayscale(0);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.faded {
+    opacity:0%;
+}
+
+.red {
+    position:absolute;
+    width:60%;
+    height:15%;
+    background-color:#c10206;
+    opacity:70%;
+    top: 25%;
+    right: 15%;
+}
+
+.aboutContainer {
+    width:100%;
+    display:flex;
+    justify-content: row;
+    align-items: center;
+    justify-content: right;
+    height:100%;
+}
+
+.heroText {
+    width:50%;
+}
+
+.heroText img {
+    width:500px;
 }
